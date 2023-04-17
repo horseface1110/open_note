@@ -1,0 +1,1 @@
+* 用header去分析每個segment，並分配到應去的socket
