@@ -1,6 +1,6 @@
 ### max-heapsort or min-heapsort
 #### max-heapsort
-* 平均時間複雜度：$O(n$$\lg$n)$
+* 平均時間複雜度：$O(n$$\lg$$n$)
 * 最好時間複雜度：$O(n)$
 * 最差時間複雜度：$O(n$$\log$$n$)$
 * 空間複雜度：0
@@ -18,8 +18,8 @@ MAX-HEAPIFY(A,i,n)    <- A是陣列，i是要檢查的index，n是陣列長度
 	if r <= n and A[r] > A[largest]
 		largest = r
 	
-	if largest != r
-		exchange A[r] and A[largest]
+	if largest != i
+		exchange A[i] and A[largest]
 		MAX-HEAPIFY(A,largest,n)
 
 
@@ -43,7 +43,7 @@ BUILD-MAX-HEAP(A,n)
 		if n < 1
 			return error
 		max = A[0]
-		A[n] = A[0]
+		A[0] = A[n]
 		MAX-HEAPIFY(A,0,n-1)
 		return max
 	
